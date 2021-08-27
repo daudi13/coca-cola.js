@@ -154,5 +154,20 @@ section .sci li a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+section .sci li a:hover {
+  background: #e51e2a;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+section .sci li a img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 /*# sourceMappingURL=main.css.map */
