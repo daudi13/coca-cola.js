@@ -43,6 +43,16 @@ section {
 
         @include breakpoint-down(mobile) {
             padding: 40px;
+
+            .toggle {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                background: url(/images/menu.png);
+                background-size: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
         }
 
         .logo {
