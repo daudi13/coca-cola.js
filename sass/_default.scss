@@ -95,6 +95,16 @@ section {
                 text-decoration: none;
             }
         }
+
+        .imgBox {
+            width: 500px;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                max-width: 150px;
+            }
+        }
     }
 
     .sci {
