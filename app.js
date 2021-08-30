@@ -13,4 +13,12 @@ var swiper = new Swiper(".mySwiper", {
         pagination: {
         el: ".swiper-pagination",
         },
-        });
+});
+        
+function toggleMenu() {
+    const menuToggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+    
+}
