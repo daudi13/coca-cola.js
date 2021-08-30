@@ -11,7 +11,7 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 150px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,6 +210,7 @@ section .sci li a img {
   position: absolute;
   bottom: 0;
   max-height: 100%;
+  cursor: pointer;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
