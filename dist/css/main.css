@@ -58,7 +58,7 @@ section header {
           align-items: center;
 }
 
-@media (max-width: null) {
+@media (max-width: 991px) {
   section header {
     padding: 40px;
   }
@@ -74,6 +74,12 @@ section header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 991px) {
+  section header .navigation {
+    display: none;
+  }
 }
 
 section header .navigation li {
@@ -102,10 +108,25 @@ section .content {
           align-items: center;
 }
 
+@media (max-width: 991px) {
+  section .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section .content .textBox {
   position: relative;
   max-width: 600px;
   margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+  section .content .textBox {
+    max-width: 100%;
+  }
 }
 
 section .content .textBox h2 {
@@ -141,8 +162,20 @@ section .content .imgBox {
           justify-content: flex-end;
 }
 
+@media (max-width: 991px) {
+  section .content .imgBox {
+    width: 100%;
+  }
+}
+
 section .content .imgBox img {
   max-width: 150px;
+}
+
+@media (max-width: 991px) {
+  section .content .imgBox img {
+    width: 100px;
+  }
 }
 
 section .sci {
@@ -158,6 +191,12 @@ section .sci {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 991px) {
+  section .sci {
+    left: 40px;
+  }
 }
 
 section .sci li {
@@ -214,6 +253,12 @@ section .sci li a img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .swiper .swiper-slide {
+    height: 300px;
+  }
 }
 
 .swiper .swiper-slide img {

@@ -41,7 +41,7 @@ section {
         justify-content: space-between;
         align-items: center;
 
-        @include breakpoint-down(moile) {
+        @include breakpoint-down(mobile) {
             padding: 40px;
         }
 
@@ -53,6 +53,10 @@ section {
         .navigation {
             position: relative;
             display: flex;
+
+            @include breakpoint-down (mobile) {
+                display: none;
+            }
 
             li {
                 list-style: none;
@@ -75,10 +79,18 @@ section {
         justify-content: space-between;
         align-items: center;
 
+        @include breakpoint-down (mobile) {
+            flex-direction: column;
+        }
+
         .textBox {
             position: relative;
             max-width: 600px;
             margin-right: 20px;
+
+            @include breakpoint-down (mobile) {
+                max-width: 100%;
+            }
 
             h2 {
                 font-size: 3em;
@@ -109,8 +121,16 @@ section {
             display: flex;
             justify-content: flex-end;
 
+            @include breakpoint-down (mobile) {
+                width: 100%;
+            }
+
             img {
                 max-width: 150px;
+
+                @include breakpoint-down(mobile) {
+                    width: 100px;
+                }
             }
         }
     }
@@ -122,6 +142,10 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include breakpoint-down (mobile) {
+            left: 40px;
+        }
 
         li {
             list-style: none;
