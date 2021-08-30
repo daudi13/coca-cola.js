@@ -11,7 +11,7 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 150px 40px;
+  padding: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +35,12 @@ section .circle {
           clip-path: circle(70% at right -20%);
 }
 
+@media (max-width: 991px) {
+  section {
+    padding: 150px 40px;
+  }
+}
+
 section header {
   position: absolute;
   top: 0;
@@ -50,6 +56,12 @@ section header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: null) {
+  section header {
+    padding: 40px;
+  }
 }
 
 section header .logo {
