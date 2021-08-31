@@ -13,3 +13,14 @@ $breakpoints-down: (
     display: flex;
     justify-content: center;
 }
+
+@mixin pic-position {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10000;
+}

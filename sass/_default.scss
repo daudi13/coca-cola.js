@@ -37,7 +37,7 @@ section {
         width: 100%;
         padding: 40px 100px;
         justify-content: space-between;
-        @include flexer
+        @include flexer;
 
         @include breakpoint-down(mobile) {
             padding: 40px;
@@ -46,27 +46,12 @@ section {
             z-index: 100000;
 
             .toggle {
-                position: relative;
-                width: 30px;
-                height: 30px;
                 background: url(/images/menu.png);
-                background-size: 30px;
-                background-repeat: no-repeat;
-                background-position: center;
-                cursor: pointer;
-                z-index: 10000;
-
+                @include pic-position;
 
                 &.active {
-                    position: relative;
-                    width: 30px;
-                    height: 30px;
                     background: url(/images/close.png);
-                    background-size: 30px;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    cursor: pointer;
-                    z-index: 100000;
+                    @include pic-position;
                 }
             }
 
