@@ -12,12 +12,12 @@ section {
   width: 100%;
   min-height: 100vh;
   padding: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -47,12 +47,12 @@ section header {
   left: 0;
   width: 100%;
   padding: 40px 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -66,10 +66,10 @@ section header {
     z-index: 100000;
   }
   section header .toggle {
+    background: url(/images/menu.png);
     position: relative;
     width: 30px;
     height: 30px;
-    background: url(/images/menu.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
@@ -77,15 +77,15 @@ section header {
     z-index: 10000;
   }
   section header .toggle.active {
+    background: url(/images/close.png);
     position: relative;
     width: 30px;
     height: 30px;
-    background: url(/images/close.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    z-index: 100000;
+    z-index: 10000;
   }
 }
 
@@ -141,12 +141,12 @@ section header .navigation li a {
 section .content {
   position: relative;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

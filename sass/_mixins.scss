@@ -11,7 +11,7 @@ $breakpoints-down: (
 
 @mixin flexer {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 @mixin pic-position {
