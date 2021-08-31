@@ -102,9 +102,8 @@ section {
     .content {
         position: relative;
         width: 100%;
-        display: flex;
         justify-content: space-between;
-        align-items: center;
+        @include flexer;
 
         @include breakpoint-down (mobile) {
             flex-direction: column;
