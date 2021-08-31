@@ -24,3 +24,8 @@ $breakpoints-down: (
     cursor: pointer;
     z-index: 10000;
 }
+
+@mixin top-left {
+    top: 0;
+    left: 0;
+}
