@@ -7,4 +7,9 @@ $breakpoints-down: (
     @media (max-width: map-get($breakpoints-down , $size )){
         @content;
     }
+};
+
+@mixin flexer {
+    display: flex;
+    justify-content: center;
 }

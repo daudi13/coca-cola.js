@@ -12,9 +12,8 @@ section {
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    @include flexer;
     background-color: #161616;
 
     .circle {
@@ -37,9 +36,8 @@ section {
         left: 0;
         width: 100%;
         padding: 40px 100px;
-        display: flex;
         justify-content: space-between;
-        align-items: center;
+        @include flexer
 
         @include breakpoint-down(mobile) {
             padding: 40px;
